@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- Top Navbar -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <div class="logo-circle">MC</div>
+        <div>
+          <div class="topbar-title">Mini CMS</div>
+          <div class="topbar-subtitle">Page Version History &amp; Comparison</div>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <div class="topbar-user">
+          <span class="user-avatar">P</span>
+          <span class="user-name">Puneet (Editor)</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="layout">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h3>Version History</h3>
+        <p class="sidebar-page">Page: <span>About Us</span></p>
+        <ul>
+          <li class="active">v5 (Current) – Puneet<br><span class="meta">24 Nov 2025 • 5:32 PM</span></li>
+          <li>v4 – Aditya<br><span class="meta">24 Nov 2025 • 4:05 PM</span></li>
+          <li>v3 – Puneet<br><span class="meta">24 Nov 2025 • 3:20 PM</span></li>
+          <li>v2 – Aditya<br><span class="meta">23 Nov 2025 • 9:10 PM</span></li>
+          <li>v1 – System<br><span class="meta">23 Nov 2025 • 7:02 PM</span></li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main">
+
+        <!-- Summary Cards -->
+        <section class="summary-row">
+          <div class="card">
+            <div class="card-label">Total Versions</div>
+            <div class="card-value">5</div>
+            <div class="card-foot">Auto-saved on every update</div>
+          </div>
+          <div class="card">
+            <div class="card-label">Last Updated By</div>
+            <div class="card-value">Puneet</div>
+            <div class="card-foot">24 Nov 2025 • 5:32 PM</div>
+          </div>
+          <div class="card">
+            <div class="card-label">Current Status</div>
+            <div class="card-tag tag-green">Live</div>
+            <div class="card-foot">Diff view ready for restore</div>
+          </div>
+        </section>
+
+        <!-- Compare Panel -->
+        <section class="compare-panel">
+          <div class="compare-header">
+            <div>
+              <h2>Compare Versions</h2>
+              <p class="compare-subtitle">Select any two versions to see added, removed and modified content.</p>
+            </div>
+            <div class="legend">
+              <span class="legend-item added-box">Added</span>
+              <span class="legend-item removed-box">Removed</span>
+              <span class="legend-item modified-box">Modified</span>
+            </div>
+          </div>
+
+          <!-- Selectors -->
+          <div class="selectors">
+            <div class="select-group">
+              <label>Base Version</label>
+              <select>
+                <option>v3 • Puneet • 24 Nov 2025</option>
+                <option>v2 • Aditya • 23 Nov 2025</option>
+                <option>v1 • System • 23 Nov 2025</option>
+              </select>
+            </div>
+            <div class="select-group">
+              <label>Compare With</label>
+              <select>
+                <option>v5 (Current) • Puneet</option>
+                <option>v4 • Aditya</option>
+              </select>
+            </div>
+            <button class="btn primary">Compare</button>
+            <button class="btn ghost">Clear</button>
+          </div>
+
+          <!-- Version Meta -->
+          <div class="version-meta">
+            <div>
+              <span class="meta-label">From</span>
+              <span class="meta-value">v3 • Puneet</span>
+            </div>
+            <div>
+              <span class="meta-label">To</span>
+              <span class="meta-value">v5 (Current) • Puneet</span>
+            </div>
+            <div>
+              <span class="meta-label">Change Summary</span>
+              <span class="meta-value">Tagline updated, mission statement refined.</span>
+            </div>
+          </div>
+
+          <!-- Diff Box -->
+          <div class="diff-box">
+            <p>
+              Welcome to <span class="modified">Our Company</span>, where we
+              <span class="removed">build simple web pages</span>
+              <span class="added">create reliable digital solutions</span>
+              for clients across the globe.
+            </p>
+            <p>
+              Our mission is to
+              <span class="added"> deliver clean, maintainable and version-safe content</span>.
+            </p>
+            <p class="diff-note">
+              *This is sample diff data. In the final version these highlights will come from the backend diff engine.*
+            </p>
+          </div>
+
+          <!-- Footer with Restore -->
+          <div class="compare-footer">
+            <div class="footer-text">
+              Currently showing differences between <strong>v3</strong> and <strong>v5 (Current)</strong>.
+            </div>
+            <button class="btn restore">Restore This Version</button>
+          </div>
+        </section>
+
+                </main>
+            </div>
+        </div>
+    </body>
+</html>
